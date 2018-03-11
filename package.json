@@ -14,7 +14,7 @@
     "build": "tsc -p ./config/tsconfig.json",
     "build-test": "tsc -p ./config/tsconfig.test.json",
     "clean": "rimraf dist",
-    "clean-all": "rimraf dist && rimraf coverage",
+    "clean-all": "rimraf dist && rimraf build && rimraf coverage",
     "test": "karma start",
     "tslint": "tslint -c ./config/tslint.json -p ./config/tsconfig.json",
     "tslint-fix": "tslint --fix -c ./config/tslint.json -p ./config/tsconfig.json"
