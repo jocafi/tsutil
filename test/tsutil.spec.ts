@@ -1,10 +1,11 @@
-import { TsUtil } from "../src/index";
+// Uncomment the line below when developing:
+// import {} from "jasmine";
+
+import { deepCopyObject } from "../src/tsutil";
 
 describe("TsUtil", () => {
-  let tsUtil: TsUtil;
 
   beforeEach(() => {
-    tsUtil = new TsUtil();
   });
 
   it("should make a deep copy of an object", () => {
@@ -158,7 +159,7 @@ describe("TsUtil", () => {
       }
     };
 
-    const out = tsUtil.deepCopyObject(obj);
+    const out = deepCopyObject(obj);
 
     expect(out.list.loo9.nossa).toBeNull();
     expect(out.list.loo9.id).toEqual("0oVwOM");

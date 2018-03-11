@@ -9,17 +9,15 @@
     "url": "https://github.com/jocafi/tsutil"
   },
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "start": "tsc && node dist/app.js",
-    "build": "npm run build-ts",
-    "build-ts": "tsc",
+    "build": "tsc -p ./config/tsconfig.json",
+    "build-test": "tsc -p ./config/tsconfig.test.json",
     "clean": "rimraf dist",
-    "debug": "npm run build && node --nolazy --inspect-brk=9229 dist/app.js",
+    "clean-all": "rimraf dist && rimraf coverage",
     "test": "karma start",
-    "tslint": "tslint -c tslint.json -p tsconfig.json",
-    "tslint-fix": "tslint --fix -c tslint.json -p tsconfig.json",
-    "watch": "npm run watch-ts",
-    "watch-ts": "tsc -w"
+    "tslint": "tslint -c ./config/tslint.json -p ./config/tsconfig.json",
+    "tslint-fix": "tslint --fix -c ./config/tslint.json -p ./config/tsconfig.json"
   },
   "dependencies": {},
   "devDependencies": {
