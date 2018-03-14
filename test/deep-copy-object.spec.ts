@@ -1,9 +1,9 @@
 // Uncomment the line below when developing:
 // import {} from "jasmine";
 
-import { deepCopyObject } from "../src/tsutil";
+import { deepCopyObject } from "../src/deep-copy-object";
 
-describe("TsUtil", () => {
+describe("deepCopyObject", () => {
 
   beforeEach(() => {
   });

@@ -8,13 +8,13 @@
     "type": "git",
     "url": "https://github.com/jocafi/tsutil"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc -p ./config/tsconfig.json",
     "build-test": "tsc -p ./config/tsconfig.test.json",
-    "clean": "rimraf dist",
-    "clean-all": "rimraf dist && rimraf build && rimraf coverage",
+    "clean": "rimraf lib",
+    "clean-all": "rimraf lib && rimraf build && rimraf coverage",
     "test": "karma start",
     "tslint": "tslint -c ./config/tslint.json -p ./config/tsconfig.json",
     "tslint-fix": "tslint --fix -c ./config/tslint.json -p ./config/tsconfig.json"
