@@ -30,4 +30,4 @@ function deepCopyObject(object) {
     return r;
 }
 exports.deepCopyObject = deepCopyObject;
-//# sourceMappingURL=tsutil.js.map
+//# sourceMappingURL=deep-copy-object.js.map
